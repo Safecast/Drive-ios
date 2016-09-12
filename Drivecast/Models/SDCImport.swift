@@ -94,26 +94,35 @@ final class SDCImportLog: Object {
 extension SDCImportLog: JSONDecodable {
     
     static func json(json: JSON) -> SDCImportLog {
-        let statusJson          = json["status_details"]
-        let utcFormatter        = NSDateFormatter()
-        utcFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss'Z'"
-        utcFormatter.timeZone   = NSTimeZone(name: "UTC")
-        
-        dlog(json)
-        
+        let statusJson              = json["status_details"]
+        let utcFormatter            = NSDateFormatter()
+        utcFormatter.dateFormat     = "yyyy-MM-dd'T'HH:mm:ss'Z'"
+        utcFormatter.timeZone       = NSTimeZone(name: "UTC")
+        let utcFormatterMS          = NSDateFormatter()
+        utcFormatterMS.dateFormat   = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+        utcFormatterMS.timeZone     = NSTimeZone(name: "UTC")
+                
         var value: Dictionary<String, AnyObject> = [:]
         
         value["id"]                 = json["id"].intValue
         value["userId"]             = json["userId"].intValue
-        
-        if let created = json["created_at"].string {
-            value["createdAt"]      = utcFormatter.dateFromString(created) ?? NSDate()
+
+        if let createdAt = json["created_at"].string {
+            if createdAt.characters.count > 20 {
+                value["createdAt"]      = utcFormatterMS.dateFromString(createdAt) ?? NSDate()
+            } else {
+                value["createdAt"]      = utcFormatter.dateFromString(createdAt) ?? NSDate()
+            }
         } else {
             value["createdAt"]      = NSDate()
         }
-        
-        if let created = json["updated_at"].string {
-            value["updatedAt"]      = utcFormatter.dateFromString(created) ?? NSDate()
+
+        if let updatedAt = json["created_at"].string {
+            if updatedAt.characters.count > 20 {
+                value["updatedAt"]      = utcFormatterMS.dateFromString(updatedAt) ?? NSDate()
+            } else {
+                value["updatedAt"]      = utcFormatter.dateFromString(updatedAt) ?? NSDate()
+            }
         } else {
             value["updatedAt"]      = NSDate()
         }
