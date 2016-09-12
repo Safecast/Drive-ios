@@ -99,12 +99,25 @@ extension SDCImportLog: JSONDecodable {
         utcFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss'Z'"
         utcFormatter.timeZone   = NSTimeZone(name: "UTC")
         
+        dlog(json)
+        
         var value: Dictionary<String, AnyObject> = [:]
         
         value["id"]                 = json["id"].intValue
         value["userId"]             = json["userId"].intValue
-        value["createdAt"]          = utcFormatter.dateFromString(json["created_at"].stringValue)!
-        value["updatedAt"]          = utcFormatter.dateFromString(json["updated_at"].stringValue)!
+        
+        if let created = json["created_at"].string {
+            value["createdAt"]      = utcFormatter.dateFromString(created) ?? NSDate()
+        } else {
+            value["createdAt"]      = NSDate()
+        }
+        
+        if let created = json["updated_at"].string {
+            value["updatedAt"]      = utcFormatter.dateFromString(created) ?? NSDate()
+        } else {
+            value["updatedAt"]      = NSDate()
+        }
+        
         value["name"]               = json["name"].stringValue
         value["cities"]             = json["cities"].stringValue
         value["credits"]            = json["credits"].stringValue

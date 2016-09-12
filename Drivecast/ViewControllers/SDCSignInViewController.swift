@@ -62,7 +62,7 @@ extension SDCSignInViewController {
     
     // Center icons on the tabbar and remove titles
     func configureTabBar() {
-        menuViewController = StoryboardScene.Main.menuViewController()
+        menuViewController = StoryboardScene.Main.instantiateMenu()
         
         menuViewController?.delegate    = self
         navigationController?.delegate  = self
@@ -313,7 +313,7 @@ extension SDCSignInViewController: UITabBarControllerDelegate {
             return true
         }
         
-        let recordController = StoryboardScene.Main.recordViewController()
+        let recordController = StoryboardScene.Main.instantiateRecord()
         
         tabBarController.presentViewController(recordController, animated: true, completion: nil)
         

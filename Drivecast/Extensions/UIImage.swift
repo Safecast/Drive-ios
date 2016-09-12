@@ -1,10 +1,9 @@
 // Generated using SwiftGen, by O.Halligon — https://github.com/AliSoftware/SwiftGen
 
-import Foundation
 import UIKit
 
 extension UIImage {
-  enum Asset : String {
+  enum Asset: String {
     case Dot = "Dot"
     case Header = "Header"
     case Back = "Back"

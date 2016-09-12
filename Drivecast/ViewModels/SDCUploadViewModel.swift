@@ -11,6 +11,7 @@ import ReactiveCocoa
 import RealmSwift
 import BEMSimpleLineGraph
 import KVNProgress
+import enum Result.NoError
 
 class SDCUploadViewModel: NSObject {
     
@@ -157,7 +158,9 @@ extension SDCUploadViewModel: BEMSimpleLineGraphDelegate {
 extension SDCUploadViewModel: BEMSimpleLineGraphDataSource {
     
     // Retrieves the measurement based on the number of displayed points
-    private func measurementForIndex(var index: Int) -> SDCMeasurement? {
+    private func measurementForIndex(let index: Int) -> SDCMeasurement? {
+        var measurementIndex = index
+        
         guard let validMeasurements = validMeasurements.value else {
             return nil
         }
@@ -165,10 +168,10 @@ extension SDCUploadViewModel: BEMSimpleLineGraphDataSource {
         let maxPoints   = SDCConfiguration.UI.lineGraphMaxPoints
         
         if validMeasurements.count > maxPoints {
-            index = index * validMeasurements.count / maxPoints
+            measurementIndex = measurementIndex * validMeasurements.count / maxPoints
         }
         
-        return validMeasurements[index]
+        return validMeasurements[measurementIndex]
     }
     
     internal func numberOfPointsInLineGraph(graph: BEMSimpleLineGraphView) -> Int {

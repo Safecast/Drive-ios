@@ -4,7 +4,7 @@ import Foundation
 import UIKit
 
 protocol StoryboardSceneType {
-  static var storyboardName : String { get }
+  static var storyboardName: String { get }
 }
 
 extension StoryboardSceneType {
@@ -26,37 +26,37 @@ extension StoryboardSceneType where Self: RawRepresentable, Self.RawValue == Str
   }
 }
 
-protocol StoryboardSegueType : RawRepresentable { }
+protocol StoryboardSegueType: RawRepresentable { }
 
 extension UIViewController {
-  func performSegue<S : StoryboardSegueType where S.RawValue == String>(segue: S, sender: AnyObject? = nil) {
+  func performSegue<S: StoryboardSegueType where S.RawValue == String>(segue: S, sender: AnyObject? = nil) {
     performSegueWithIdentifier(segue.rawValue, sender: sender)
   }
 }
 
 struct StoryboardScene {
-  enum Main : String, StoryboardSceneType {
+  enum Main: String, StoryboardSceneType {
     static let storyboardName = "Main"
 
-    case About = "About"
-    static func aboutViewController() -> UINavigationController {
-      return Main.About.viewController() as! UINavigationController
+    case AboutScene = "About"
+    static func instantiateAbout() -> UINavigationController {
+      return StoryboardScene.Main.AboutScene.viewController() as! UINavigationController
     }
 
-    case Menu = "Menu"
-    static func menuViewController() -> UITabBarController {
-      return Main.Menu.viewController() as! UITabBarController
+    case MenuScene = "Menu"
+    static func instantiateMenu() -> UITabBarController {
+      return StoryboardScene.Main.MenuScene.viewController() as! UITabBarController
     }
 
-    case Record = "Record"
-    static func recordViewController() -> UINavigationController {
-      return Main.Record.viewController() as! UINavigationController
+    case RecordScene = "Record"
+    static func instantiateRecord() -> UINavigationController {
+      return StoryboardScene.Main.RecordScene.viewController() as! UINavigationController
     }
   }
 }
 
 struct StoryboardSegue {
-  enum Main : String, StoryboardSegueType {
+  enum Main: String, StoryboardSegueType {
     case OpenConsole = "OpenConsole"
   }
 }

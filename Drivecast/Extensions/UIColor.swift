@@ -52,6 +52,10 @@ extension UIColor {
       case .Text: return 0x333333ff
       }
     }
+
+    var color: UIColor {
+      return UIColor(named: self)
+    }
   }
 
   convenience init(named name: Name) {

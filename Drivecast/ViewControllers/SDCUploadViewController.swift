@@ -101,7 +101,7 @@ extension SDCUploadViewController {
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(
             image: UIImage.Asset.More.image,
             style: UIBarButtonItemStyle.Plain,
-            target: self, action: Selector("openAboutModal")
+            target: self, action: #selector(SDCUploadViewController.openAboutModal)
         )
         
         // Action Buttons
@@ -156,7 +156,7 @@ extension SDCUploadViewController {
     }
     
     func openAboutModal() {
-        let about = StoryboardScene.Main.aboutViewController()
+        let about = StoryboardScene.Main.instantiateAbout()
         
         self.presentViewController(about, animated: true, completion: nil)
     }
@@ -207,7 +207,7 @@ extension SDCUploadViewController {
         recordButton.rac_signalForControlEvents(UIControlEvents.TouchUpInside)
             .subscribeNext { _ in
                 // Presents the recording screen
-                let recordController = StoryboardScene.Main.recordViewController()
+                let recordController = StoryboardScene.Main.instantiateRecord()
                 
                 self.tabBarController?.presentViewController(recordController, animated: true, completion: nil)
         }

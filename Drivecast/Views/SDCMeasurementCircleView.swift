@@ -11,7 +11,7 @@ import AngleGradientLayer
 
 // Circular gradient (based on LUT) onto which a mask is applied
 class SDCMeasurementCircleGradientView: UIView {
-    let lut: SDCMeasurementColorLUT = SDCMeasurementColorLUT()
+    private let lut: SDCMeasurementColorLUT = SDCMeasurementColorLUT()
     
     override class func layerClass() -> AnyClass {
         return AngleGradientLayer.self
@@ -23,8 +23,13 @@ class SDCMeasurementCircleGradientView: UIView {
         let steps       = 64
         let stepSize    = lut.n / steps
         var i           = 0
-        let colors      = (1...steps).map { _ in
-            return self.lut.colorForIndex(self.lut.n - 1 - stepSize * i++).CGColor
+        
+        let colors: [AnyObject]? = (1...steps).map { _ in
+            let color   = lut.colorForIndex(lut.n - 1 - stepSize * i).CGColor
+            
+            i += 1
+            
+            return color
         }
         
         let l: AngleGradientLayer = (self.layer as? AngleGradientLayer)!

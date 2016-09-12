@@ -77,7 +77,7 @@ extension SDCDashboardTableViewController {
         navigationItem.rightBarButtonItem = UIBarButtonItem(
             image: UIImage.Asset.More.image,
             style: UIBarButtonItemStyle.Plain,
-            target: self, action: Selector("openAboutModal")
+            target: self, action: #selector(SDCDashboardTableViewController.openAboutModal)
         )
         
         // Table view
@@ -121,7 +121,7 @@ extension SDCDashboardTableViewController {
     }
     
     func openAboutModal() {
-        let about = StoryboardScene.Main.aboutViewController()
+        let about = StoryboardScene.Main.instantiateAbout()
         
         presentViewController(about, animated: true, completion: nil)
     }
@@ -130,7 +130,7 @@ extension SDCDashboardTableViewController {
         refreshControl?.tintColor   = UIColor.clearColor()
         
         if let refreshControl = refreshControl where !refreshControl.refreshing {
-            refreshControl.performSelector(Selector("beginRefreshing"), withObject: nil, afterDelay: 0.05)
+            refreshControl.performSelector(#selector(UIRefreshControl.beginRefreshing), withObject: nil, afterDelay: 0.05)
         }
         
         viewModel.getFirstPage { _ in }
@@ -183,7 +183,7 @@ extension SDCDashboardTableViewController {
             self.tableView.reloadData()
             
             if let refreshControl = self.refreshControl where refreshControl.refreshing {
-                refreshControl.performSelector(Selector("endRefreshing"), withObject: nil, afterDelay: 0.05)
+                refreshControl.performSelector(#selector(UIRefreshControl.endRefreshing), withObject: nil, afterDelay: 0.05)
             }
         }
     }
@@ -209,7 +209,7 @@ extension SDCDashboardTableViewController {
         recordButton.rac_signalForControlEvents(UIControlEvents.TouchUpInside)
             .subscribeNext { _ in
                 // Presents the recording screen
-                let recordController = StoryboardScene.Main.recordViewController()
+                let recordController = StoryboardScene.Main.instantiateRecord()
                 
                 self.tabBarController?.presentViewController(recordController, animated: true, completion: nil)
         }
@@ -265,11 +265,11 @@ extension SDCDashboardTableViewController {
         var count       = 3
         
         if importLog.details != "" {
-            count++
+            count += 1
         }
         
         if importLog.hasAction {
-            count++
+            count += 1
         }
         
         return count

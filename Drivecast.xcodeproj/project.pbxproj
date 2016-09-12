@@ -80,7 +80,9 @@
 		49FC9AA31BCFB852006FA40E /* SDCRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FC9A8B1BCFB852006FA40E /* SDCRecordViewController.swift */; };
 		49FC9AA41BCFB852006FA40E /* SDCDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FC9A8C1BCFB852006FA40E /* SDCDashboardViewController.swift */; };
 		49FC9AA51BCFB852006FA40E /* SDCRecordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FC9A8E1BCFB852006FA40E /* SDCRecordViewModel.swift */; };
-		B8F6CAC158ACE4A419ECC58F /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 257394F867C97FD4FC62AE03 /* Pods.framework */; };
+		BD69EF4F74DD3A9D6004FEAB /* Pods_DrivecastTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B549D58A01F8A0C8BD520E92 /* Pods_DrivecastTests.framework */; };
+		CD7FA535B4B59CF391D3EAA4 /* Pods_Drivecast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D6AC7A09B2CB42ACA214C46 /* Pods_Drivecast.framework */; };
+		DA5C13D61C7637CD912DD377 /* Pods_DrivecastUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B4D703F2565472A4D5D69B8 /* Pods_DrivecastUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,7 +103,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19F25119C43FA2301DC7699D /* Pods-Drivecast.staging release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drivecast.staging release.xcconfig"; path = "Pods/Target Support Files/Pods-Drivecast/Pods-Drivecast.staging release.xcconfig"; sourceTree = "<group>"; };
 		257394F867C97FD4FC62AE03 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D6AC7A09B2CB42ACA214C46 /* Pods_Drivecast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Drivecast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		343F69F8316FCC29CE3B0855 /* Pods-DrivecastUITests.production debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrivecastUITests.production debug.xcconfig"; path = "Pods/Target Support Files/Pods-DrivecastUITests/Pods-DrivecastUITests.production debug.xcconfig"; sourceTree = "<group>"; };
+		447C668AE5E98E2DBD3467C7 /* Pods-Drivecast.staging debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drivecast.staging debug.xcconfig"; path = "Pods/Target Support Files/Pods-Drivecast/Pods-Drivecast.staging debug.xcconfig"; sourceTree = "<group>"; };
+		47925A5CBF90ED96D511F692 /* Pods-DrivecastUITests.production release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrivecastUITests.production release.xcconfig"; path = "Pods/Target Support Files/Pods-DrivecastUITests/Pods-DrivecastUITests.production release.xcconfig"; sourceTree = "<group>"; };
 		4920F8B21BD415F7001D3C16 /* SDCConsoleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDCConsoleViewController.swift; sourceTree = "<group>"; };
 		4920F8B41BD42C62001D3C16 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		4920F8B81BD46162001D3C16 /* SDCMeasurement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDCMeasurement.swift; sourceTree = "<group>"; };
@@ -179,10 +186,16 @@
 		49FC9A8B1BCFB852006FA40E /* SDCRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDCRecordViewController.swift; sourceTree = "<group>"; };
 		49FC9A8C1BCFB852006FA40E /* SDCDashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDCDashboardViewController.swift; sourceTree = "<group>"; };
 		49FC9A8E1BCFB852006FA40E /* SDCRecordViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDCRecordViewModel.swift; sourceTree = "<group>"; };
-		56B8D662FA9703DECFEE8609 /* Pods.production debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods.production debug.xcconfig"; path = "Pods/Target Support Files/Pods/Pods.production debug.xcconfig"; sourceTree = "<group>"; };
-		8D72FD4BB90C87934F44102E /* Pods.staging debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods.staging debug.xcconfig"; path = "Pods/Target Support Files/Pods/Pods.staging debug.xcconfig"; sourceTree = "<group>"; };
-		BBFF8E9ECA56CCE4BEFC6195 /* Pods.staging release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods.staging release.xcconfig"; path = "Pods/Target Support Files/Pods/Pods.staging release.xcconfig"; sourceTree = "<group>"; };
-		E5331C90BAAD6850DDEB09A6 /* Pods.production release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods.production release.xcconfig"; path = "Pods/Target Support Files/Pods/Pods.production release.xcconfig"; sourceTree = "<group>"; };
+		54BE0ACAE8C744C63F3B6B2A /* Pods-Drivecast.production release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drivecast.production release.xcconfig"; path = "Pods/Target Support Files/Pods-Drivecast/Pods-Drivecast.production release.xcconfig"; sourceTree = "<group>"; };
+		68A9E245EBE5843507D1EB98 /* Pods-DrivecastTests.production release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrivecastTests.production release.xcconfig"; path = "Pods/Target Support Files/Pods-DrivecastTests/Pods-DrivecastTests.production release.xcconfig"; sourceTree = "<group>"; };
+		7B4D703F2565472A4D5D69B8 /* Pods_DrivecastUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrivecastUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D4D7D37ED9C0266CBA546C6 /* Pods-DrivecastUITests.staging debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrivecastUITests.staging debug.xcconfig"; path = "Pods/Target Support Files/Pods-DrivecastUITests/Pods-DrivecastUITests.staging debug.xcconfig"; sourceTree = "<group>"; };
+		91F4FA250023A2DE0919067E /* Pods-DrivecastTests.production debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrivecastTests.production debug.xcconfig"; path = "Pods/Target Support Files/Pods-DrivecastTests/Pods-DrivecastTests.production debug.xcconfig"; sourceTree = "<group>"; };
+		A277EEB507401A48617EAE3C /* Pods-DrivecastTests.staging debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrivecastTests.staging debug.xcconfig"; path = "Pods/Target Support Files/Pods-DrivecastTests/Pods-DrivecastTests.staging debug.xcconfig"; sourceTree = "<group>"; };
+		B549D58A01F8A0C8BD520E92 /* Pods_DrivecastTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrivecastTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D969D6C82355A48B43E0354E /* Pods-DrivecastTests.staging release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrivecastTests.staging release.xcconfig"; path = "Pods/Target Support Files/Pods-DrivecastTests/Pods-DrivecastTests.staging release.xcconfig"; sourceTree = "<group>"; };
+		E8E3E5B44894C9D1F3BB4B7C /* Pods-DrivecastUITests.staging release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrivecastUITests.staging release.xcconfig"; path = "Pods/Target Support Files/Pods-DrivecastUITests/Pods-DrivecastUITests.staging release.xcconfig"; sourceTree = "<group>"; };
+		F406FB58987F371D146FEDFE /* Pods-Drivecast.production debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drivecast.production debug.xcconfig"; path = "Pods/Target Support Files/Pods-Drivecast/Pods-Drivecast.production debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,7 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49FC9A581BCFB79D006FA40E /* MapKit.framework in Frameworks */,
-				B8F6CAC158ACE4A419ECC58F /* Pods.framework in Frameworks */,
+				CD7FA535B4B59CF391D3EAA4 /* Pods_Drivecast.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +212,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD69EF4F74DD3A9D6004FEAB /* Pods_DrivecastTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,12 +220,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA5C13D61C7637CD912DD377 /* Pods_DrivecastUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E6642C7BAE25EB5472518C7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F406FB58987F371D146FEDFE /* Pods-Drivecast.production debug.xcconfig */,
+				447C668AE5E98E2DBD3467C7 /* Pods-Drivecast.staging debug.xcconfig */,
+				54BE0ACAE8C744C63F3B6B2A /* Pods-Drivecast.production release.xcconfig */,
+				19F25119C43FA2301DC7699D /* Pods-Drivecast.staging release.xcconfig */,
+				91F4FA250023A2DE0919067E /* Pods-DrivecastTests.production debug.xcconfig */,
+				A277EEB507401A48617EAE3C /* Pods-DrivecastTests.staging debug.xcconfig */,
+				68A9E245EBE5843507D1EB98 /* Pods-DrivecastTests.production release.xcconfig */,
+				D969D6C82355A48B43E0354E /* Pods-DrivecastTests.staging release.xcconfig */,
+				343F69F8316FCC29CE3B0855 /* Pods-DrivecastUITests.production debug.xcconfig */,
+				8D4D7D37ED9C0266CBA546C6 /* Pods-DrivecastUITests.staging debug.xcconfig */,
+				47925A5CBF90ED96D511F692 /* Pods-DrivecastUITests.production release.xcconfig */,
+				E8E3E5B44894C9D1F3BB4B7C /* Pods-DrivecastUITests.staging release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		49F03F1E1BFA264800B54CE5 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -236,8 +270,8 @@
 				49FC9A351BCFB5D4006FA40E /* DrivecastTests */,
 				49FC9A401BCFB5D4006FA40E /* DrivecastUITests */,
 				49FC9A1F1BCFB5D4006FA40E /* Products */,
-				A691FB0BBB5BAF089739C7D3 /* Pods */,
 				7BB9A93BEB34EB81D32D5871 /* Frameworks */,
+				0E6642C7BAE25EB5472518C7 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -429,19 +463,11 @@
 				497CA82F1BE76AB300B75BD9 /* RealmSwift.framework */,
 				49FC9A571BCFB79D006FA40E /* MapKit.framework */,
 				257394F867C97FD4FC62AE03 /* Pods.framework */,
+				2D6AC7A09B2CB42ACA214C46 /* Pods_Drivecast.framework */,
+				B549D58A01F8A0C8BD520E92 /* Pods_DrivecastTests.framework */,
+				7B4D703F2565472A4D5D69B8 /* Pods_DrivecastUITests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		A691FB0BBB5BAF089739C7D3 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				56B8D662FA9703DECFEE8609 /* Pods.production debug.xcconfig */,
-				8D72FD4BB90C87934F44102E /* Pods.staging debug.xcconfig */,
-				E5331C90BAAD6850DDEB09A6 /* Pods.production release.xcconfig */,
-				BBFF8E9ECA56CCE4BEFC6195 /* Pods.staging release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -451,13 +477,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49FC9A461BCFB5D4006FA40E /* Build configuration list for PBXNativeTarget "Drivecast" */;
 			buildPhases = (
-				18CC9F258CDDEB031FAD62B0 /* Check Pods Manifest.lock */,
+				82A112E71EEF88BD3AAA970D /* [CP] Check Pods Manifest.lock */,
 				49FC9A1A1BCFB5D4006FA40E /* Sources */,
 				49FC9A1B1BCFB5D4006FA40E /* Frameworks */,
 				49FC9A1C1BCFB5D4006FA40E /* Resources */,
 				49FC9AA61BCFDA37006FA40E /* Run Swiftgen Script */,
-				29BA2CF5D07A835971CF9C3A /* Embed Pods Frameworks */,
-				305FA8DFCDA9A1AF1A9453D9 /* Copy Pods Resources */,
+				CE97D34554E16B1E16F8B783 /* [CP] Embed Pods Frameworks */,
+				6B9A8417168866E019E276A5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -472,9 +498,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49FC9A491BCFB5D4006FA40E /* Build configuration list for PBXNativeTarget "DrivecastTests" */;
 			buildPhases = (
+				1BC5BBE2C87ED7C3A7AA6B46 /* [CP] Check Pods Manifest.lock */,
 				49FC9A2E1BCFB5D4006FA40E /* Sources */,
 				49FC9A2F1BCFB5D4006FA40E /* Frameworks */,
 				49FC9A301BCFB5D4006FA40E /* Resources */,
+				381F4085A8E9779D7C59FA26 /* [CP] Embed Pods Frameworks */,
+				48B00BDB07F0265934F768B6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -490,9 +519,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49FC9A4C1BCFB5D4006FA40E /* Build configuration list for PBXNativeTarget "DrivecastUITests" */;
 			buildPhases = (
+				DC643FF8A87EEBE5EEC7129E /* [CP] Check Pods Manifest.lock */,
 				49FC9A391BCFB5D4006FA40E /* Sources */,
 				49FC9A3A1BCFB5D4006FA40E /* Frameworks */,
 				49FC9A3B1BCFB5D4006FA40E /* Resources */,
+				1AFF0B5AC2C23E4C1DA8F1CA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -585,14 +616,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		18CC9F258CDDEB031FAD62B0 /* Check Pods Manifest.lock */ = {
+		1AFF0B5AC2C23E4C1DA8F1CA /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DrivecastUITests/Pods-DrivecastUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1BC5BBE2C87ED7C3A7AA6B46 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -600,34 +646,34 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		29BA2CF5D07A835971CF9C3A /* Embed Pods Frameworks */ = {
+		381F4085A8E9779D7C59FA26 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DrivecastTests/Pods-DrivecastTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		305FA8DFCDA9A1AF1A9453D9 /* Copy Pods Resources */ = {
+		48B00BDB07F0265934F768B6 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DrivecastTests/Pods-DrivecastTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		49FC9AA61BCFDA37006FA40E /* Run Swiftgen Script */ = {
@@ -643,6 +689,66 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "swiftgen storyboards \"${SRCROOT}/Drivecast/Interfaces/Base.lproj/Main.storyboard\" > \"${SRCROOT}/Drivecast/Extensions/UIStoryboard.swift\"\n\nswiftgen colors \"${SRCROOT}/Drivecast/Ressources/Colors.txt\" > \"${SRCROOT}/Drivecast/Extensions/UIColor.swift\"\n\nswiftgen images \"${SRCROOT}/Drivecast/Ressources/Assets.xcassets\" > \"${SRCROOT}/Drivecast/Extensions/UIImage.swift\"\n\n#swiftgen-l10n \"${SRCROOT}/Drivecast/Ressources/Localizable.strings\" > \"${SRCROOT}/Drivecast/Extensions/L10n.swift\"";
+		};
+		6B9A8417168866E019E276A5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Drivecast/Pods-Drivecast-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82A112E71EEF88BD3AAA970D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CE97D34554E16B1E16F8B783 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Drivecast/Pods-Drivecast-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC643FF8A87EEBE5EEC7129E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -857,12 +963,13 @@
 		};
 		49FC9A471BCFB5D4006FA40E /* Production Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 56B8D662FA9703DECFEE8609 /* Pods.production debug.xcconfig */;
+			baseConfigurationReference = F406FB58987F371D146FEDFE /* Pods-Drivecast.production debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -877,12 +984,13 @@
 		};
 		49FC9A481BCFB5D4006FA40E /* Production Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E5331C90BAAD6850DDEB09A6 /* Pods.production release.xcconfig */;
+			baseConfigurationReference = 54BE0ACAE8C744C63F3B6B2A /* Pods-Drivecast.production release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -896,6 +1004,7 @@
 		};
 		49FC9A4A1BCFB5D4006FA40E /* Production Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91F4FA250023A2DE0919067E /* Pods-DrivecastTests.production debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
@@ -911,6 +1020,7 @@
 		};
 		49FC9A4B1BCFB5D4006FA40E /* Production Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68A9E245EBE5843507D1EB98 /* Pods-DrivecastTests.production release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
@@ -925,6 +1035,7 @@
 		};
 		49FC9A4D1BCFB5D4006FA40E /* Production Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 343F69F8316FCC29CE3B0855 /* Pods-DrivecastUITests.production debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = DrivecastUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -937,6 +1048,7 @@
 		};
 		49FC9A4E1BCFB5D4006FA40E /* Production Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47925A5CBF90ED96D511F692 /* Pods-DrivecastUITests.production release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = DrivecastUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -994,12 +1106,13 @@
 		};
 		49FC9A501BCFB5E0006FA40E /* Staging Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8D72FD4BB90C87934F44102E /* Pods.staging debug.xcconfig */;
+			baseConfigurationReference = 447C668AE5E98E2DBD3467C7 /* Pods-Drivecast.staging debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1014,6 +1127,7 @@
 		};
 		49FC9A511BCFB5E0006FA40E /* Staging Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A277EEB507401A48617EAE3C /* Pods-DrivecastTests.staging debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
@@ -1029,6 +1143,7 @@
 		};
 		49FC9A521BCFB5E0006FA40E /* Staging Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D4D7D37ED9C0266CBA546C6 /* Pods-DrivecastUITests.staging debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = DrivecastUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1081,12 +1196,13 @@
 		};
 		49FC9A541BCFB5EA006FA40E /* Staging Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BBFF8E9ECA56CCE4BEFC6195 /* Pods.staging release.xcconfig */;
+			baseConfigurationReference = 19F25119C43FA2301DC7699D /* Pods-Drivecast.staging release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1100,6 +1216,7 @@
 		};
 		49FC9A551BCFB5EA006FA40E /* Staging Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D969D6C82355A48B43E0354E /* Pods-DrivecastTests.staging release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
@@ -1114,6 +1231,7 @@
 		};
 		49FC9A561BCFB5EA006FA40E /* Staging Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8E3E5B44894C9D1F3BB4B7C /* Pods-DrivecastUITests.staging release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = DrivecastUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
