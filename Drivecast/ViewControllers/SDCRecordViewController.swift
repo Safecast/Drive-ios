@@ -10,6 +10,7 @@ import UIKit
 import ReactiveCocoa
 import SpinKit
 import SnapKit
+import DeviceKit
 
 class SDCRecordViewController: UIViewController {
     

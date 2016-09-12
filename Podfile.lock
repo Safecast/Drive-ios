@@ -2,6 +2,7 @@ PODS:
   - Alamofire (3.1.1)
   - AngleGradientLayer (1.2.3)
   - BEMSimpleLineGraph (4.1)
+  - DeviceKit (0.3.2)
   - IQKeyboardManagerSwift (3.3.4)
   - KVNProgress (2.2.1)
   - ReactiveCocoa (4.0.0-alpha-3):
@@ -29,6 +30,7 @@ DEPENDENCIES:
   - Alamofire (= 3.1.1)
   - AngleGradientLayer (= 1.2.3)
   - BEMSimpleLineGraph (= 4.1)
+  - DeviceKit (~> 0.3.2)
   - IQKeyboardManagerSwift (= 3.3.4)
   - KVNProgress (= 2.2.1)
   - ReactiveCocoa (= 4.0.0-alpha-3)
@@ -41,6 +43,7 @@ SPEC CHECKSUMS:
   Alamofire: 9b0a7188b961a03914a99304488bd226b0e46c0e
   AngleGradientLayer: 085302f7f9764735762f83642e86cababfec1d37
   BEMSimpleLineGraph: 44fd451f27f8e9cf96f2da5bea27603093576dd1
+  DeviceKit: 79182140c0aa8daaf4f4b3920e0b079f5fa9db79
   IQKeyboardManagerSwift: 6f2290d093f5269dc07bdae8bc58e968cf9c4738
   KVNProgress: 7001d2d16a2755cee5599e8e485befe056f2197b
   ReactiveCocoa: f03dcfd385b0e4ee5b7a323f5e0b146a498e12d3
