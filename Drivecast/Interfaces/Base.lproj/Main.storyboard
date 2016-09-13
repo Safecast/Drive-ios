@@ -267,25 +267,21 @@
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="30" id="rJ0-R9-aOA"/>
                                             </constraints>
-                                            <color key="textColor" red="0.17254901959999999" green="0.7725490196" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                         </textField>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="400" verticalHuggingPriority="400" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Who made the measurements?" textAlignment="justified" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="OLy-Wx-Dcp">
                                             <rect key="frame" x="16" y="66" width="568" height="30"/>
-                                            <color key="textColor" red="0.17254901959999999" green="0.7725490196" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                         </textField>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="400" verticalHuggingPriority="400" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="How do you want to name the drive?" textAlignment="justified" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="aEw-18-3yQ">
                                             <rect key="frame" x="16" y="116" width="568" height="30"/>
-                                            <color key="textColor" red="0.17254901959999999" green="0.7725490196" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                         </textField>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Can you add a quick description of your drive?" textAlignment="justified" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="7wd-D7-66B">
                                             <rect key="frame" x="16" y="166" width="568" height="30"/>
-                                            <color key="textColor" red="0.17254901959999999" green="0.7725490196" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                         </textField>
