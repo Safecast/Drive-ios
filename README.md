@@ -23,11 +23,11 @@ Other ressources about the BLE Bee module.
 
 # Technical details
 
-This app is writen in swift (3.0 compliant) using the MVVM design pattern with some use of functional reactive programming.
+This app is writen in swift 2.3 using the MVVM design pattern with some use of functional reactive programming.
 
 ## Requirements
 
-The code-base works under Xcode 7.1 for iOS devices 8.0+.
+The code-base works under Xcode 7.3.1 for iOS devices 8.0+.
 
 ## External tools and libraries
 

@@ -37,7 +37,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: b70a7352335f8ea5babd0a923eb7e8eacc67b877
-  AngleGradientLayer: 085302f7f9764735762f83642e86cababfec1d37
+  AngleGradientLayer: '085302f7f9764735762f83642e86cababfec1d37'
   BEMSimpleLineGraph: 44fd451f27f8e9cf96f2da5bea27603093576dd1
   Crashlytics: 4391d8df0b125345e9f209c5db6e7f40a6a8435d
   DeviceKit: b414b210c225ae19b77a47e64cb04f187c1c4f9a

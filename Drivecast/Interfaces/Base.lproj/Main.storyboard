@@ -1453,10 +1453,10 @@ AND DESIGN</string>
                                                     <rect key="frame" x="8" y="8" width="584" height="73.5"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U7C-yt-RYO">
-                                                            <rect key="frame" x="222" y="5.5" width="200" height="63"/>
+                                                            <rect key="frame" x="222" y="21" width="200" height="32"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The code-base of this app is available on Github and licensed under CC0 1.0 Universal public domain dedication." lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1zh-U9-z9y">
-                                                                    <rect key="frame" x="40" y="0.0" width="160" height="62.5"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The code-base of this app is available on Github." lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1zh-U9-z9y">
+                                                                    <rect key="frame" x="40" y="0.0" width="160" height="31.5"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" relation="lessThanOrEqual" constant="160" id="j1d-s4-Fe6"/>
                                                                     </constraints>
@@ -1465,7 +1465,7 @@ AND DESIGN</string>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jl4-du-hNd">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="32" height="63"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
                                                                     <state key="normal" image="Github"/>
                                                                 </button>
                                                             </subviews>
