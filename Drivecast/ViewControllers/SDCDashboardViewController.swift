@@ -75,7 +75,7 @@ extension SDCDashboardTableViewController {
         
         // Navigation button
         navigationItem.rightBarButtonItem = UIBarButtonItem(
-            image: UIImage.Asset.More.image,
+            image: Asset.More.image,
             style: UIBarButtonItemStyle.Plain,
             target: self, action: #selector(SDCDashboardTableViewController.openAboutModal)
         )
