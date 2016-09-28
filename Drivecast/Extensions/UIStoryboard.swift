@@ -13,7 +13,10 @@ extension StoryboardSceneType {
   }
 
   static func initialViewController() -> UIViewController {
-    return storyboard().instantiateInitialViewController()!
+    guard let vc = storyboard().instantiateInitialViewController() else {
+      fatalError("Failed to instantiate initialViewController for \(self.storyboardName)")
+    }
+    return vc
   }
 }
 
@@ -34,23 +37,45 @@ extension UIViewController {
   }
 }
 
+// swiftlint:disable file_length
+// swiftlint:disable type_body_length
+
 struct StoryboardScene {
   enum Main: String, StoryboardSceneType {
     static let storyboardName = "Main"
 
+    static func initialViewController() -> UINavigationController {
+      guard let vc = storyboard().instantiateInitialViewController() as? UINavigationController else {
+        fatalError("Failed to instantiate initialViewController for \(self.storyboardName)")
+      }
+      return vc
+    }
+
     case AboutScene = "About"
     static func instantiateAbout() -> UINavigationController {
-      return StoryboardScene.Main.AboutScene.viewController() as! UINavigationController
+      guard let vc = StoryboardScene.Main.AboutScene.viewController() as? UINavigationController
+      else {
+        fatalError("ViewController 'About' is not of the expected class UINavigationController.")
+      }
+      return vc
     }
 
     case MenuScene = "Menu"
     static func instantiateMenu() -> UITabBarController {
-      return StoryboardScene.Main.MenuScene.viewController() as! UITabBarController
+      guard let vc = StoryboardScene.Main.MenuScene.viewController() as? UITabBarController
+      else {
+        fatalError("ViewController 'Menu' is not of the expected class UITabBarController.")
+      }
+      return vc
     }
 
     case RecordScene = "Record"
     static func instantiateRecord() -> UINavigationController {
-      return StoryboardScene.Main.RecordScene.viewController() as! UINavigationController
+      guard let vc = StoryboardScene.Main.RecordScene.viewController() as? UINavigationController
+      else {
+        fatalError("ViewController 'Record' is not of the expected class UINavigationController.")
+      }
+      return vc
     }
   }
 }

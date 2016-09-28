@@ -9,7 +9,7 @@
 import UIKit
 
 // Reference: http://www.raywenderlich.com/86521/how-to-make-a-view-controller-transition-animation-like-in-the-ping-app
-class SDCCircleTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning {
+class SDCCircleTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning, CAAnimationDelegate {
     
     var transitionContext: UIViewControllerContextTransitioning?
 
@@ -20,7 +20,7 @@ class SDCCircleTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioni
     func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
         self.transitionContext = transitionContext
         
-        let containerView = transitionContext.containerView()!
+        let containerView = transitionContext.containerView()
         let fromViewController = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey)!
         let toViewController = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey)!
         let referenceCenterView = fromViewController.view
@@ -54,7 +54,7 @@ class SDCCircleTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioni
         maskLayer.addAnimation(maskLayerAnimation, forKey: "path")
     }
     
-    override func animationDidStop(anim: CAAnimation, finished flag: Bool) {
+    func animationDidStop(anim: CAAnimation, finished flag: Bool) {
         self.transitionContext?.completeTransition(!self.transitionContext!.transitionWasCancelled())
         self.transitionContext?.viewControllerForKey(UITransitionContextFromViewControllerKey)?.view.layer.mask = nil
     }

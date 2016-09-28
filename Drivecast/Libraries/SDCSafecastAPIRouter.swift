@@ -102,7 +102,7 @@ enum SDCSafecastAPIRouter: URLRequestConvertible {
         let mutableURLRequest:NSMutableURLRequest!
         let URL = NSURL(string: SDCSafecastAPIRouter.baseURLString)!
         let encoding = Alamofire.ParameterEncoding.URL
-        mutableURLRequest = NSMutableURLRequest(URL: URL.URLByAppendingPathComponent(path))
+        mutableURLRequest = NSMutableURLRequest(URL: URL.URLByAppendingPathComponent(path)!)
         mutableURLRequest.HTTPMethod = method.rawValue
         
         switch self {
