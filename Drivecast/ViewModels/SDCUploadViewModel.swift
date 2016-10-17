@@ -11,6 +11,7 @@ import ReactiveCocoa
 import RealmSwift
 import BEMSimpleLineGraph
 import KVNProgress
+import Crashlytics
 import enum Result.NoError
 
 class SDCUploadViewModel: NSObject {
@@ -59,6 +60,9 @@ extension SDCUploadViewModel {
         try! realm.write {
             realm.delete(measurements)
         }
+        
+        Answers.logCustomEventWithName("MeasurementsDiscarded",
+                                       customAttributes: [:])
         
         // Update measurements to dismiss the upload screen and display the record button
         updateMeasurementData()
@@ -117,6 +121,9 @@ extension SDCUploadViewModel {
                         importLog.add()
                         
                         self.discardAllMeasurements()
+                        
+                        Answers.logCustomEventWithName("MeasurementsDiscarded",
+                            customAttributes: [:])
                         
                         UIApplication.showTab(SDCConfiguration.UI.TabBarMenu.Dashboard)
                         

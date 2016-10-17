@@ -121,8 +121,8 @@ extension SDCBluetoothManager {
     
     // Starts scanning for remote peripherals
     func startScanning() throws {
-        guard let centralManager = self.centralManager
-            where self.state == .Ready else {
+        guard let centralManager = self.centralManager where
+            self.state == .Ready else {
                 throw SDCBluetoothManager.Error.InvalidState(self.state)
         }
         
@@ -131,8 +131,8 @@ extension SDCBluetoothManager {
     
     // Stops scanning for remote peripherals
     func stopScanning() throws {
-        guard let centralManager = self.centralManager
-            where self.state == .Ready else {
+        guard let centralManager = self.centralManager where
+            self.state == .Ready else {
                 throw SDCBluetoothManager.Error.InvalidState(self.state)
         }
         
@@ -141,8 +141,8 @@ extension SDCBluetoothManager {
     
     // Connects a discovered peripheral
     func connect(peripheral: SDCBluetoothRemotePeripheral) throws {
-        guard let centralManager = self.centralManager
-            where self.state == .Ready else {
+        guard let centralManager = self.centralManager where
+            self.state == .Ready else {
             throw SDCBluetoothManager.Error.InvalidState(self.state)
         }
         
@@ -153,8 +153,8 @@ extension SDCBluetoothManager {
     
     // Disconnects a connecting or connected peripheral
     func disconnect(peripheral: SDCBluetoothRemotePeripheral) throws {
-        guard let centralManager = self.centralManager
-            where self.state == .Connecting || self.state == .Connected else {
+        guard let centralManager = self.centralManager where
+            self.state == .Connecting || self.state == .Connected else {
             throw SDCBluetoothManager.Error.InvalidState(self.state)
         }
         

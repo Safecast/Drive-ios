@@ -8,6 +8,7 @@
 
 import Foundation
 import ReactiveCocoa
+import Crashlytics
 
 struct SDCSignInViewModel {
     
@@ -52,6 +53,10 @@ struct SDCSignInViewModel {
             switch result {
             case .Success(let user):
                 dlog(user)
+                
+                Answers.logLoginWithMethod("API",
+                                           success: true,
+                                           customAttributes: [:])
                 
                 SDCUser.authenticatedUser       = user
                 self.userIsAuthenticated.value  = true

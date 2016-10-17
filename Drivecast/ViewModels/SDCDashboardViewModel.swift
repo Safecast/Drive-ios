@@ -10,6 +10,7 @@ import Foundation
 import ReactiveCocoa
 import KVNProgress
 import RealmSwift
+import Crashlytics
 
 class SDCDashboardViewModel {
     
@@ -65,6 +66,10 @@ extension SDCDashboardViewModel {
             switch result {
             case .Success(let user):
                 dlog(user)
+                
+                Crashlytics.sharedInstance().setUserEmail(user.email)
+                Crashlytics.sharedInstance().setUserIdentifier(String(user.id))
+                Crashlytics.sharedInstance().setUserName(user.name)
 
                 self.updateUser()
             case .Failure(let error):
@@ -144,6 +149,9 @@ extension SDCDashboardViewModel {
                 
                 self.updateImportLogs()
                 
+                Answers.logCustomEventWithName("ImportSubmitted",
+                                               customAttributes: [:])
+                
                 KVNProgress.showSuccess()
             case .Failure(let error):
                 dlog(error)
@@ -184,6 +192,9 @@ extension SDCDashboardViewModel {
                     importLog.update()
                     
                     self.updateImportLogs()
+                    
+                    Answers.logCustomEventWithName("MetadataEdited",
+                                                   customAttributes: [:])
                     
                     KVNProgress.showSuccess()
                 case .Failure(let error):

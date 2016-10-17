@@ -9,6 +9,7 @@
 import Foundation
 import CoreBluetooth
 import ReactiveCocoa
+import Crashlytics
 import enum Result.NoError
 
 class SDCRecordViewModel: NSObject {
@@ -72,6 +73,9 @@ class SDCRecordViewModel: NSObject {
                     self.printOnConsole("started recording", type: .Emphasys)
                     self.actionButtonString.value = "pause recording".uppercaseString
                     self.timer = self.resumeTimer()
+                    
+                    Answers.logCustomEventWithName("RecordingSessionStarted",
+                        customAttributes: [:])
 
                 } else {
                     self.printOnConsole("stopped recording", type: .Emphasys)
