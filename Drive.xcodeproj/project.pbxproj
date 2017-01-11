@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		492C350A1E26311100333243 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492C35091E26311100333243 /* AppDelegate.swift */; };
-		492C350C1E26311100333243 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492C350B1E26311100333243 /* ViewController.swift */; };
-		492C350F1E26311100333243 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492C350D1E26311100333243 /* Main.storyboard */; };
-		492C35111E26311100333243 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 492C35101E26311100333243 /* Assets.xcassets */; };
-		492C35141E26311100333243 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492C35121E26311100333243 /* LaunchScreen.storyboard */; };
-		492C351F1E26311100333243 /* DriveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492C351E1E26311100333243 /* DriveTests.swift */; };
+		492C353F1E26349200333243 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 492C352A1E26349200333243 /* Assets.xcassets */; };
+		492C35401E26349200333243 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492C352B1E26349200333243 /* LaunchScreen.storyboard */; };
+		492C35411E26349200333243 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492C352D1E26349200333243 /* Main.storyboard */; };
+		492C35421E26349200333243 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492C35301E26349200333243 /* AppDelegate.swift */; };
+		492C35431E26349200333243 /* Array+Shuffled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492C35321E26349200333243 /* Array+Shuffled.swift */; };
+		492C35441E26349200333243 /* String+Pluralized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492C35331E26349200333243 /* String+Pluralized.swift */; };
+		492C35451E26349200333243 /* UIRectEdge+Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492C35341E26349200333243 /* UIRectEdge+Index.swift */; };
+		492C35461E26349200333243 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492C353A1E26349200333243 /* ViewController.swift */; };
+		492C354C1E26349A00333243 /* DriveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492C35491E26349A00333243 /* DriveTests.swift */; };
+		492C35501E26355C00333243 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 492C354F1E26355C00333243 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,15 +31,19 @@
 
 /* Begin PBXFileReference section */
 		492C35061E26311100333243 /* Drive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drive.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		492C35091E26311100333243 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		492C350B1E26311100333243 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		492C350E1E26311100333243 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		492C35101E26311100333243 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		492C35131E26311100333243 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		492C35151E26311100333243 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		492C351A1E26311100333243 /* DriveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DriveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		492C351E1E26311100333243 /* DriveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriveTests.swift; sourceTree = "<group>"; };
-		492C35201E26311100333243 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		492C352A1E26349200333243 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		492C352C1E26349200333243 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		492C352E1E26349200333243 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		492C35301E26349200333243 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		492C35321E26349200333243 /* Array+Shuffled.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Shuffled.swift"; sourceTree = "<group>"; };
+		492C35331E26349200333243 /* String+Pluralized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Pluralized.swift"; sourceTree = "<group>"; };
+		492C35341E26349200333243 /* UIRectEdge+Index.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIRectEdge+Index.swift"; sourceTree = "<group>"; };
+		492C353A1E26349200333243 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		492C353E1E26349200333243 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		492C35491E26349A00333243 /* DriveTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriveTests.swift; sourceTree = "<group>"; };
+		492C354B1E26349A00333243 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		492C354F1E26355C00333243 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				492C35501E26355C00333243 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +71,7 @@
 				492C35081E26311100333243 /* Drive */,
 				492C351D1E26311100333243 /* DriveTests */,
 				492C35071E26311100333243 /* Products */,
+				492C354E1E26355C00333243 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +87,9 @@
 		492C35081E26311100333243 /* Drive */ = {
 			isa = PBXGroup;
 			children = (
-				492C35091E26311100333243 /* AppDelegate.swift */,
-				492C350B1E26311100333243 /* ViewController.swift */,
-				492C350D1E26311100333243 /* Main.storyboard */,
-				492C35101E26311100333243 /* Assets.xcassets */,
-				492C35121E26311100333243 /* LaunchScreen.storyboard */,
-				492C35151E26311100333243 /* Info.plist */,
+				492C35291E26349200333243 /* Resources */,
+				492C352F1E26349200333243 /* Sources */,
+				492C353D1E26349200333243 /* Support */,
 			);
 			path = Drive;
 			sourceTree = "<group>";
@@ -90,10 +97,128 @@
 		492C351D1E26311100333243 /* DriveTests */ = {
 			isa = PBXGroup;
 			children = (
-				492C351E1E26311100333243 /* DriveTests.swift */,
-				492C35201E26311100333243 /* Info.plist */,
+				492C35481E26349A00333243 /* Sources */,
+				492C354A1E26349A00333243 /* Support */,
 			);
 			path = DriveTests;
+			sourceTree = "<group>";
+		};
+		492C35291E26349200333243 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				492C352A1E26349200333243 /* Assets.xcassets */,
+				492C352B1E26349200333243 /* LaunchScreen.storyboard */,
+				492C352D1E26349200333243 /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		492C352F1E26349200333243 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				492C35301E26349200333243 /* AppDelegate.swift */,
+				492C35311E26349200333243 /* Extensions */,
+				492C35351E26349200333243 /* Models */,
+				492C35361E26349200333243 /* Protocols */,
+				492C35371E26349200333243 /* Resources */,
+				492C35381E26349200333243 /* Services */,
+				492C35391E26349200333243 /* ViewControllers */,
+				492C353B1E26349200333243 /* ViewModels */,
+				492C353C1E26349200333243 /* Views */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		492C35311E26349200333243 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				492C35321E26349200333243 /* Array+Shuffled.swift */,
+				492C35331E26349200333243 /* String+Pluralized.swift */,
+				492C35341E26349200333243 /* UIRectEdge+Index.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		492C35351E26349200333243 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		492C35361E26349200333243 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		492C35371E26349200333243 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		492C35381E26349200333243 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		492C35391E26349200333243 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				492C353A1E26349200333243 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		492C353B1E26349200333243 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		492C353C1E26349200333243 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		492C353D1E26349200333243 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				492C353E1E26349200333243 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		492C35481E26349A00333243 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				492C35491E26349A00333243 /* DriveTests.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		492C354A1E26349A00333243 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				492C354B1E26349A00333243 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		492C354E1E26355C00333243 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				492C354F1E26355C00333243 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,8 +271,16 @@
 				TargetAttributes = {
 					492C35051E26311100333243 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = D87ZC5H69L;
+						DevelopmentTeam = 7S5AAN8833;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					492C35191E26311100333243 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -181,9 +314,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				492C35141E26311100333243 /* LaunchScreen.storyboard in Resources */,
-				492C35111E26311100333243 /* Assets.xcassets in Resources */,
-				492C350F1E26311100333243 /* Main.storyboard in Resources */,
+				492C35411E26349200333243 /* Main.storyboard in Resources */,
+				492C353F1E26349200333243 /* Assets.xcassets in Resources */,
+				492C35401E26349200333243 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,8 +334,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				492C350C1E26311100333243 /* ViewController.swift in Sources */,
-				492C350A1E26311100333243 /* AppDelegate.swift in Sources */,
+				492C35461E26349200333243 /* ViewController.swift in Sources */,
+				492C35441E26349200333243 /* String+Pluralized.swift in Sources */,
+				492C35451E26349200333243 /* UIRectEdge+Index.swift in Sources */,
+				492C35431E26349200333243 /* Array+Shuffled.swift in Sources */,
+				492C35421E26349200333243 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,7 +346,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				492C351F1E26311100333243 /* DriveTests.swift in Sources */,
+				492C354C1E26349A00333243 /* DriveTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,20 +361,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		492C350D1E26311100333243 /* Main.storyboard */ = {
+		492C352B1E26349200333243 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				492C350E1E26311100333243 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		492C35121E26311100333243 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				492C35131E26311100333243 /* Base */,
+				492C352C1E26349200333243 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		492C352D1E26349200333243 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				492C352E1E26349200333243 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -284,7 +420,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -328,7 +464,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -341,8 +477,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = D87ZC5H69L;
-				INFOPLIST_FILE = Drive/Info.plist;
+				DEVELOPMENT_TEAM = 7S5AAN8833;
+				INFOPLIST_FILE = "$(SRCROOT)/Drive/Support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.momokoito.drivecast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -354,8 +490,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = D87ZC5H69L;
-				INFOPLIST_FILE = Drive/Info.plist;
+				DEVELOPMENT_TEAM = 7S5AAN8833;
+				INFOPLIST_FILE = "$(SRCROOT)/Drive/Support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.momokoito.drivecast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -369,9 +505,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = D87ZC5H69L;
-				INFOPLIST_FILE = DriveTests/Info.plist;
+				INFOPLIST_FILE = DriveTests/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.momokoito.DriveTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.momokoito.drivecast.tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Drive.app/Drive";
@@ -384,9 +520,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = D87ZC5H69L;
-				INFOPLIST_FILE = DriveTests/Info.plist;
+				INFOPLIST_FILE = DriveTests/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.momokoito.DriveTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.momokoito.drivecast.tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Drive.app/Drive";
@@ -412,6 +548,7 @@
 				492C35251E26311100333243 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		492C35261E26311100333243 /* Build configuration list for PBXNativeTarget "DriveTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +557,7 @@
 				492C35281E26311100333243 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
