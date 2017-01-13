@@ -11,12 +11,18 @@
 		492C35401E26349200333243 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492C352B1E26349200333243 /* LaunchScreen.storyboard */; };
 		492C35411E26349200333243 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492C352D1E26349200333243 /* Main.storyboard */; };
 		492C35421E26349200333243 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492C35301E26349200333243 /* AppDelegate.swift */; };
-		492C35431E26349200333243 /* Array+Shuffled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492C35321E26349200333243 /* Array+Shuffled.swift */; };
-		492C35441E26349200333243 /* String+Pluralized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492C35331E26349200333243 /* String+Pluralized.swift */; };
-		492C35451E26349200333243 /* UIRectEdge+Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492C35341E26349200333243 /* UIRectEdge+Index.swift */; };
 		492C35461E26349200333243 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492C353A1E26349200333243 /* ViewController.swift */; };
 		492C354C1E26349A00333243 /* DriveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492C35491E26349A00333243 /* DriveTests.swift */; };
 		492C35501E26355C00333243 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 492C354F1E26355C00333243 /* MapKit.framework */; };
+		498AAECC1E28EA5C00F26860 /* SafecastServiceRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498AAECB1E28EA5C00F26860 /* SafecastServiceRouter.swift */; };
+		498AAED21E28F1DD00F26860 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 498AAECF1E28F1DD00F26860 /* Alamofire.framework */; };
+		498AAED31E28F1DD00F26860 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 498AAED01E28F1DD00F26860 /* RxCocoa.framework */; };
+		498AAED41E28F1DD00F26860 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 498AAED11E28F1DD00F26860 /* RxSwift.framework */; };
+		498AAED61E28F4F300F26860 /* ServiceRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498AAED51E28F4F300F26860 /* ServiceRouter.swift */; };
+		498AAED81E2903D500F26860 /* String+Find.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498AAED71E2903D500F26860 /* String+Find.swift */; };
+		498AAEDA1E291BDD00F26860 /* SafecastImportServiceRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498AAED91E291BDD00F26860 /* SafecastImportServiceRouter.swift */; };
+		498AAEDC1E29278600F26860 /* SafecastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498AAEDB1E29278600F26860 /* SafecastService.swift */; };
+		498AAEDE1E29279300F26860 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498AAEDD1E29279300F26860 /* Service.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,14 +42,20 @@
 		492C352C1E26349200333243 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		492C352E1E26349200333243 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		492C35301E26349200333243 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		492C35321E26349200333243 /* Array+Shuffled.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Shuffled.swift"; sourceTree = "<group>"; };
-		492C35331E26349200333243 /* String+Pluralized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Pluralized.swift"; sourceTree = "<group>"; };
-		492C35341E26349200333243 /* UIRectEdge+Index.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIRectEdge+Index.swift"; sourceTree = "<group>"; };
 		492C353A1E26349200333243 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		492C353E1E26349200333243 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		492C35491E26349A00333243 /* DriveTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriveTests.swift; sourceTree = "<group>"; };
 		492C354B1E26349A00333243 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		492C354F1E26355C00333243 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		498AAECB1E28EA5C00F26860 /* SafecastServiceRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafecastServiceRouter.swift; sourceTree = "<group>"; };
+		498AAECF1E28F1DD00F26860 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		498AAED01E28F1DD00F26860 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		498AAED11E28F1DD00F26860 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		498AAED51E28F4F300F26860 /* ServiceRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceRouter.swift; sourceTree = "<group>"; };
+		498AAED71E2903D500F26860 /* String+Find.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Find.swift"; sourceTree = "<group>"; };
+		498AAED91E291BDD00F26860 /* SafecastImportServiceRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafecastImportServiceRouter.swift; sourceTree = "<group>"; };
+		498AAEDB1E29278600F26860 /* SafecastService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafecastService.swift; sourceTree = "<group>"; };
+		498AAEDD1E29279300F26860 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +63,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				498AAED21E28F1DD00F26860 /* Alamofire.framework in Frameworks */,
+				498AAED31E28F1DD00F26860 /* RxCocoa.framework in Frameworks */,
+				498AAED41E28F1DD00F26860 /* RxSwift.framework in Frameworks */,
 				492C35501E26355C00333243 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -132,9 +147,7 @@
 		492C35311E26349200333243 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				492C35321E26349200333243 /* Array+Shuffled.swift */,
-				492C35331E26349200333243 /* String+Pluralized.swift */,
-				492C35341E26349200333243 /* UIRectEdge+Index.swift */,
+				498AAED71E2903D500F26860 /* String+Find.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -149,6 +162,8 @@
 		492C35361E26349200333243 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				498AAED51E28F4F300F26860 /* ServiceRouter.swift */,
+				498AAEDD1E29279300F26860 /* Service.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -163,6 +178,9 @@
 		492C35381E26349200333243 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				498AAECB1E28EA5C00F26860 /* SafecastServiceRouter.swift */,
+				498AAED91E291BDD00F26860 /* SafecastImportServiceRouter.swift */,
+				498AAEDB1E29278600F26860 /* SafecastService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -216,6 +234,9 @@
 		492C354E1E26355C00333243 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				498AAECF1E28F1DD00F26860 /* Alamofire.framework */,
+				498AAED01E28F1DD00F26860 /* RxCocoa.framework */,
+				498AAED11E28F1DD00F26860 /* RxSwift.framework */,
 				492C354F1E26355C00333243 /* MapKit.framework */,
 			);
 			name = Frameworks;
@@ -231,6 +252,7 @@
 				492C35021E26311100333243 /* Sources */,
 				492C35031E26311100333243 /* Frameworks */,
 				492C35041E26311100333243 /* Resources */,
+				498AAECE1E28F19300F26860 /* Carthage Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -329,15 +351,38 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		498AAECE1E28F19300F26860 /* Carthage Copy Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+			);
+			name = "Carthage Copy Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		492C35021E26311100333243 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				492C35461E26349200333243 /* ViewController.swift in Sources */,
-				492C35441E26349200333243 /* String+Pluralized.swift in Sources */,
-				492C35451E26349200333243 /* UIRectEdge+Index.swift in Sources */,
-				492C35431E26349200333243 /* Array+Shuffled.swift in Sources */,
+				498AAEDE1E29279300F26860 /* Service.swift in Sources */,
+				498AAED61E28F4F300F26860 /* ServiceRouter.swift in Sources */,
+				498AAECC1E28EA5C00F26860 /* SafecastServiceRouter.swift in Sources */,
+				498AAEDA1E291BDD00F26860 /* SafecastImportServiceRouter.swift in Sources */,
+				498AAEDC1E29278600F26860 /* SafecastService.swift in Sources */,
+				498AAED81E2903D500F26860 /* String+Find.swift in Sources */,
 				492C35421E26349200333243 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -478,6 +523,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7S5AAN8833;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Drive/Support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.momokoito.drivecast;
@@ -491,6 +540,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7S5AAN8833;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Drive/Support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.momokoito.drivecast;
